@@ -11,8 +11,6 @@ import java.util.ArrayList;
 
 public class Adapter_Motion extends BaseAdapter {
 
-
-
     public ArrayList<MotionVO> list = new ArrayList<MotionVO>();
     public Adapter_Motion(){
 
