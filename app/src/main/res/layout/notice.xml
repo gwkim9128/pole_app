@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_tilt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C19C3A"
+            android:insetLeft="6dp"
+            android:insetRight="6dp"
+            android:text="기울기"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_motion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C19C3A"
+            android:insetRight="6dp"
+            android:text="감지센서"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_impact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C19C3A"
+            android:insetRight="6dp"
+            android:text="충격감지"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_tilt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:visibility="visible" />
+
+    <ListView
+        android:id="@+id/lv_motion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:visibility="invisible">
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/lv_impact"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:visibility="invisible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

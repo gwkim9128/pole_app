@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- interpolator : 애니메이션의 종류 -->
+    <!-- repeatCount : 추가반복, 디폴트값 0 -->
+    <!-- duration : 실행시간, 한번 -->
+    <!-- privotX,Y : 회전중심점 -->
+    <!-- privotX,Y : 회전중심점 -->
+    <!-- fromDegrees : 시작각도 -->
+    <!-- toDegrees : 끝각도 -->
+    <!-- startOffset : 3초 후에 실행 -->
+    <rotate xmlns:android="http://schemas.android.com/apk/res/android"
+        android:interpolator="@android:anim/cycle_interpolator"
+        android:repeatCount="0"
+        android:duration="500"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:startOffset="2000">
+    </rotate>
+
+    <scale xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="3000"
+        android:fromXScale="0.0"
+        android:fromYScale="0.0"
+        android:toXScale="1.0"
+        android:toYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%">
+    </scale>
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="2000" />
+    <translate
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="2000"
+        android:fromXDelta="-300%"
+        android:toXDelta="400"
+        >
+    </translate>
+</set>
